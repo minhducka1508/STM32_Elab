@@ -1,0 +1,44 @@
+# Thư mục build/output
+build/
+Debug/
+Release/
+out/
+*.elf
+*.bin
+*.hex
+*.map
+.json
+
+# File object, dependency
+*.o
+*.d
+*.a
+
+# File tạm của IDE
+*.launch
+*.log
+*.swp
+*.tmp
+
+# STM32CubeIDE specific
+.settings/
+.metadata/
+*.project
+*.cproject
+*.mxproject
+
+# Keil (uVision) specific
+*.uvguix.*
+*.uvoptx
+*.uvgui.*
+
+# PlatformIO
+.pio/
+
+# VSCode / Eclipse
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
