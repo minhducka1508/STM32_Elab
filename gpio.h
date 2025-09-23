@@ -1,5 +1,5 @@
 /*
- *	gpiox.h
+ *	gpio.h
  *	Created on: Sep 21, 2025
  *		Author: Trần Minh Đức
  */
@@ -12,7 +12,7 @@
 
 typedef struct
 {
-	GPIO_TypeDef *port;
+	GPIO_TypeDef* port;
 	uint16_t pin;
 } GpioX_t;
 

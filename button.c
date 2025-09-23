@@ -17,11 +17,15 @@ void ButtonX_Init(ButtonX_t* b, GpioX_t io, bool active_high)
 {
     b->io = io;
     b->active_high = active_high;
+    GpioX_InInit(io, active_high ? GPIO_PULLDOWN : GPIO_PULLUP);
+    
+    /* Default, Setting in System Config */
     b->debounce_ms = DEFAULT_DEBOUNCE_TIME_MS;
     b->click_ms = DEFAULT_CLICK_MAX_TIME_MS;
     b->double_ms = DEFAULT_DOUBLE_CLICK_GAP_MS;
     b->long_ms = DEFAULT_LONG_PRESS_TIME_MS;
     b->hold_repeat_ms = DEFAULT_HOLD_REPEAT_INTERVAL_MS;
+    
     b->t_change = b->t_press = b->t_last_release = AppTime_Millis();
     b->raw = b->stable = b->last_stable = false;
     b->click_counter = 0;
