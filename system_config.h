@@ -1,5 +1,5 @@
 /*
- *	botton.h
+ *	systemconfig.h
  *	Created on: Sep 21, 2025
  *		Author: Trần Minh Đức
  */
@@ -18,5 +18,7 @@
 #define DEFAULT_LONG_PRESS_TIME_MS                  (800)  // ngưỡng nhấn giữ lâu
 #define DEFAULT_HOLD_REPEAT_INTERVAL_MS             (150)  // chu kỳ lặp khi giữ
 
+/* Define External Interrup*/
+#define MAX_EXTI_LINES                              (16)    // STM32 chỉ co 16 line EXTI
 
 #endif /* _SYSTEM_CONFIG_H_ */

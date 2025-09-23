@@ -13,11 +13,9 @@
 #define LED1_Port				GPIOA
 #define LED1_Pin				GPIO_PIN_13
 
-// Bottons
+// Buttons
 #define BTN1_Port				GPIOA
 #define BTN1_Pin				GPIO_PIN_14
-
-
 
 
 #endif /* _BOARD_PIN_H_ */

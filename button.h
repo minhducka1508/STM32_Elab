@@ -7,7 +7,7 @@
 #ifndef _BUTTON_H_
 #define _BUTTON_H_
 
-#include "gpiox.h"
+#include "gpio.h"
 #include "apptime.h"
 
 typedef enum

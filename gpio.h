@@ -4,8 +4,8 @@
  *		Author: Trần Minh Đức
  */
 
-#ifndef _GPIOX_H_
-#define _GPIOX_H_
+#ifndef _GPIO_H_
+#define _GPIO_H_
 
 // #include "stm32f4xx_hal.h"
 #include <stdbool.h>
@@ -22,4 +22,4 @@ void GpioX_Write(GpioX_t io, bool high);
 void GpioX_Toggle(GpioX_t io);
 bool GpioX_Read(GpioX_t io);
 
-#endif /* _GPIOX_H_ */
+#endif /* _GPIO_H_ */
