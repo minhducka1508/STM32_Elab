@@ -6,7 +6,9 @@
 
 #include "button.h"
 #include "system_config.h"
-
+/*
+Tiếp tục chỉnh sửa
+*/
 static bool read_raw(ButtonX_t* b)
 {
     bool level = GpioX_Read(b->io);
