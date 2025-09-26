@@ -12,7 +12,9 @@
 #define APTIME_IRQn 		TIM2_IRQn
 
 static volatile uint32_t s_ms = 0; // đếm mili giây
-
+/*
+code thêm ở đây, chỉnh sửa các thứ các thứ
+*/
 // Khai báo handle cho HAL
 static TIM_HandleTypeDef s_tim;
 
